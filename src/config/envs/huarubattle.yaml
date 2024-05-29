@@ -1,0 +1,14 @@
+env: huarubattle
+
+test_greedy: True
+test_nepisode: 32 # 32
+test_interval: 10000
+log_interval: 10000
+runner_log_interval: 10000
+learner_log_interval: 10000
+t_max: 10000000
+
+obs_last_action: False
+
+env_args:
+  map_name: battle5v5
