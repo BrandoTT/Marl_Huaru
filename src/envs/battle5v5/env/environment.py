@@ -283,7 +283,7 @@ class HuaRuBattleEnvWrapper(EnvRunner):
         # 3. 统计上一帧中，蓝方战机的数量 & 存在的导弹剩余数量
         last_blue_agent_num = len(last_obs['blue']['platforminfos'])
         last_blue_weapon_num = 0.
-        for entity in next_obs['blue']['platforminfos']:
+        for entity in last_obs['blue']['platforminfos']:
             last_blue_weapon_num += entity['LeftWeapon']
         # 4. 统计下一帧中，蓝方战机的数量 & 存在的导弹剩余数量
         next_blue_agent_num = len(next_obs['blue']['platforminfos'])
